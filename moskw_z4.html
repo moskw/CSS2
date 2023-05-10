@@ -1,0 +1,73 @@
+	<html>
+	<head> 
+		<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+	</head>
+	
+	<body>
+	<h1> <p align="center"> Sposoby podlaczania styli do strony(skrocone zestawienie </p> </h1>
+	<h3> 1. Zewnetrzny arkusz stylow. </h3> 
+	<style> td { border: 1px solid black; } </style>
+		<table>
+	<td> 
+			<textarea cols="100" rows="3">
+<head>
+	<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+			</textarea>
+			</td>
+		</table>
+	
+	<h3> 2. Styl lokalny inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli <br>
+	dopisanie arkusza do wybranego bloku tresci strony. </h3>
+	<style> td { border: 1px solid black; } </style>
+	
+		<table>
+			<td> 
+			<textarea cols="100" rows="1">
+<selektor style="cecha1: wartosc1; cecha2: wartosc2...">...</selektor>
+			</textarea>
+			</td>
+		</table>
+		
+	<h3>3. Wewnetrzny arkusz stylow. </h3>
+	<style> td { border: 1px solid black; } </style>
+		<table>
+			<td> 
+			<textarea cols="100" rows="7">
+<head>
+	<style type="text/css">
+	selektor1 { cecha: wartosc; cecha2: wartosc2... }
+	selektor2 { cecha: wartosc; cecha2: wartosc2... }
+	</style>
+</head>
+			</textarea>
+			</td>
+			</table>
+		
+	<h3>4. Alternatywny arkusz stylow. </h3>
+	<style> td { border: 1px solid black; } </style>
+		<table>
+			<td> 
+			<textarea cols="84" rows="7">
+<head>
+	<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyslna" />
+	<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1"/>
+	<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2"/>
+</head>
+		</textarea>
+		</td>
+		</table>
+		
+	<h3>5. Import arkusza stylow </h3>
+	<style> td { border: 1px solid black; } </style>
+		<table>
+			<td> 
+			<textarea cols="99" rows="7">
+		
+<style type="text/css">
+	@import url(adres zewnetrznego arkusza stylów);
+</style>
+
+			</textarea>
+			</td>
+			</table>
